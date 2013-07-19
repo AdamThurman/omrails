@@ -1,3 +1,7 @@
+$navbarBackgroundHighlight: #003300;
+$navbarBackground: #003300;
+
+
 @import 'bootstrap';
 
 body {
@@ -5,6 +9,12 @@ body {
 }
 
 @import 'bootstrap-responsive';
+
+.navbar-inner{
+	@include box-shadow(!important);
+	color: #00FF00;
+	border: 6px;
+}
 
 .footer {
 
