@@ -8,4 +8,7 @@ class User < ActiveRecord::Base
 
   # Added to fix the error ActiveModel::MassAssignmentSecurity::Error when going to the signup page
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
+
+  # All users must have names
+  validates_presence_of :name
 end
