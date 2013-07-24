@@ -10,5 +10,5 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
 
   # All users must have names
-  validates_presence_of :name
+  # validates_presence_of :name
 end
