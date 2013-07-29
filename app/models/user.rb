@@ -8,5 +8,8 @@ class User < ActiveRecord::Base
 
   # Added to fix the error ActiveModel::MassAssignmentSecurity::Error when going to the signup page
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name
+  # attr_accessible :title, :body
+
+  has_many :pins
   
 end
